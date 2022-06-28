@@ -1,0 +1,14 @@
+#isntall basic linux
+FROM mysql
+
+ENV MYSQL_ROOT_PASSWORD=pass
+
+EXPOSE 3306
+
+# docker build -t my_mysql -f ./Dockerfile_mysql .
+# docker rm  my_mysql -f
+# docker run -d --name=my_mysql -p 6603:3306 my_mysql
+
+# Verifying From MySQL Workbench
+# In MySQL workbench, create a connection to 127.0.0.1:6603 
+# with user root and password jsppassword. You will see the database jsptutorial and the data in table Product. 

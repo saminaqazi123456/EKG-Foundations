@@ -1,0 +1,7 @@
+FROM python:3.8.3-alpine
+
+CMD sleep 3600
+
+# docker build -t my_python_files -f ./Dockerfile_python_files .
+# docker rm  my_python_files -f
+# docker run -d --name=my_python_files -v -v files:/files  my_python_files
