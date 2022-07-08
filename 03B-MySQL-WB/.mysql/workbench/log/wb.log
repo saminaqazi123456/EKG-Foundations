@@ -1,0 +1,60 @@
+04:03:27 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /usr/share/mysql-workbench
+	plugin path: /usr/lib/mysql-workbench/plugins
+	struct path: /usr/share/mysql-workbench/grt
+	module path: /usr/lib/mysql-workbench/modules
+	library path: /usr/share/mysql-workbench/libraries
+	user data dir: /config/.mysql/workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+04:03:27 [INF][      WBContext]: WbContext::init
+04:03:28 [INF][            WBA]: Looking for extension modules for WBA...
+04:03:28 [INF][            WBA]: 0 extension modules found
+04:03:28 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+04:03:28 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:5: link '607091bc-fda9-11ec-baa3-0242ac130003' <object db.mgmt.Connection> key=connection could not be resolved
+04:03:28 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:17: link '5862f42e-fda9-11ec-baa3-0242ac130003' <object GrtObject> key=owner could not be resolved
+04:03:28 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+04:03:28 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.29 CE build 1751076 (64 bit)
+	Configuration Directory: /config/.mysql/workbench
+	Data Directory: /usr/share/mysql-workbench
+	Cairo Version: 1.16.0
+	OS:  x86_64
+	CPU: 8x Intel(R) Core(TM) i9-9980HK CPU @ 2.40GHz (2400.000MHz) - 7.77GiB RAM
+No video adapter info available
+	Distribution: Ubuntu 20.04.4 LTS
+
+	Fips mode enabled: no
+
+04:03:28 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
+04:03:29 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
+04:03:47 [WRN][   WBContext UI]: Server instance  has no attached connection, deleting it
+04:04:00 [INF][   WBContext UI]: Opening Migration Wizard...
+04:04:00 [WRN][         mforms]: Resource file not found: migration_win.png
+04:04:00 [WRN][            grt]: in com.mysql.rdbms.sql92.driver.odbc_dsn: unserialized XML contains invalid member db.mgmt.PythonDBAPIDriver::accessibilityNameLoaded 0/0 new non-MySQL connections
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:00 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+04:04:51 [ERR][SQL Editor Form]: SqlEditorForm: exception in do_connect method: Exception: Unable to connect to localhost
+04:04:51 [WRN][SQL Editor Form]: Unable to connect to localhost
+04:04:51 [INF][SQL Editor Form]: Error 2003 connecting to server, assuming server is down and opening editor with no connection
+04:04:51 [INF][SQL Editor Form]: Error 2003 connecting to server, assuming server is down and opening editor with no connection
+04:04:51 [INF][          Admin]: Auto-created instance profile for connection 
+04:04:51 [ERR][wb_admin_control.py:init:307]: Error connecting to MySQL: Unable to connect to localhost (code 2003)
+04:04:51 [ERR][wb_admin_control.py:server_polling_thread:561]: Error creating SQL connection for monitoring: MySQLError('Unable to connect to localhost (code 2003)')

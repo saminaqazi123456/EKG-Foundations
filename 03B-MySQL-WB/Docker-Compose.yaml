@@ -1,0 +1,23 @@
+version: "2.1"
+services:
+  mysql-workbench:
+    image: lscr.io/linuxserver/mysql-workbench:latest
+    container_name: mysql-workbench
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+     - $PWD:/config
+    ports:
+      - 3000:3000
+    cap_add:
+      - IPC_LOCK
+    restart: unless-stopped
+
+  my_sql:
+    image: mysql
+    environment: 
+      - MYSQL_ROOT_PASSWORD=pass
+    ports:
+      - 3306:3306

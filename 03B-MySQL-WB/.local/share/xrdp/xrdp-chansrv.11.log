@@ -1,0 +1,8 @@
+[20220707-04:03:26] [CORE ] main: app started pid 494(0x000001ee)
+[20220707-04:03:26] [INFO ] main: DISPLAY env var set to :11.0
+[20220707-04:03:26] [INFO ] main: using DISPLAY 11
+[20220707-04:03:26] [INFO ] channel_thread_loop: thread start
+[20220707-04:03:27] [INFO ] Socket 12: AF_UNIX connection received
+[20220707-04:06:52] [INFO ] channel_thread_loop: trans_check_wait_objs error resetting
+[20220707-04:06:52] [INFO ] Socket 13: AF_UNIX connection received
+[20220707-05:26:08] [INFO ] channel_thread_loop: trans_check_wait_objs error resetting
