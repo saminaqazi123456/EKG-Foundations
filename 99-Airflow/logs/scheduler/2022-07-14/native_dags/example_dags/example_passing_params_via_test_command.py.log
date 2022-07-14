@@ -1,0 +1,46 @@
+[2022-07-14 22:12:08,484] {processor.py:153} INFO - Started process (PID=88) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:12:08,485] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-07-14 22:12:08,486] {logging_mixin.py:115} INFO - [2022-07-14 22:12:08,485] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:12:08,514] {processor.py:651} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:12:08,831] {logging_mixin.py:115} INFO - [2022-07-14 22:12:08,831] {manager.py:508} INFO - Created Permission View: can edit on DAG:example_passing_params_via_test_command
+[2022-07-14 22:12:08,849] {logging_mixin.py:115} INFO - [2022-07-14 22:12:08,849] {manager.py:508} INFO - Created Permission View: can read on DAG:example_passing_params_via_test_command
+[2022-07-14 22:12:08,862] {logging_mixin.py:115} INFO - [2022-07-14 22:12:08,862] {manager.py:508} INFO - Created Permission View: can delete on DAG:example_passing_params_via_test_command
+[2022-07-14 22:12:08,862] {logging_mixin.py:115} INFO - [2022-07-14 22:12:08,862] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-14 22:12:08,876] {logging_mixin.py:115} INFO - [2022-07-14 22:12:08,875] {dag.py:2439} INFO - Creating ORM DAG for example_passing_params_via_test_command
+[2022-07-14 22:12:08,910] {logging_mixin.py:115} INFO - [2022-07-14 22:12:08,909] {dag.py:2972} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-07-14T22:11:00+00:00, run_after=2022-07-14T22:12:00+00:00
+[2022-07-14 22:12:08,930] {processor.py:161} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.450 seconds
+[2022-07-14 22:12:39,651] {processor.py:153} INFO - Started process (PID=150) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:12:39,652] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-07-14 22:12:39,652] {logging_mixin.py:115} INFO - [2022-07-14 22:12:39,652] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:12:39,680] {processor.py:651} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:12:39,711] {logging_mixin.py:115} INFO - [2022-07-14 22:12:39,711] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-14 22:12:39,759] {logging_mixin.py:115} INFO - [2022-07-14 22:12:39,759] {dag.py:2972} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-07-14T22:11:00+00:00, run_after=2022-07-14T22:12:00+00:00
+[2022-07-14 22:12:39,781] {processor.py:161} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.134 seconds
+[2022-07-14 22:13:10,701] {processor.py:153} INFO - Started process (PID=203) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:13:10,702] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-07-14 22:13:10,703] {logging_mixin.py:115} INFO - [2022-07-14 22:13:10,703] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:13:10,727] {processor.py:651} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:13:10,756] {logging_mixin.py:115} INFO - [2022-07-14 22:13:10,756] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-14 22:13:10,792] {logging_mixin.py:115} INFO - [2022-07-14 22:13:10,792] {dag.py:2972} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-07-14T22:12:00+00:00, run_after=2022-07-14T22:13:00+00:00
+[2022-07-14 22:13:10,808] {processor.py:161} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.111 seconds
+[2022-07-14 22:13:41,113] {processor.py:153} INFO - Started process (PID=264) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:13:41,113] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-07-14 22:13:41,114] {logging_mixin.py:115} INFO - [2022-07-14 22:13:41,114] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:13:41,131] {processor.py:651} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:13:41,169] {logging_mixin.py:115} INFO - [2022-07-14 22:13:41,169] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-14 22:13:41,199] {logging_mixin.py:115} INFO - [2022-07-14 22:13:41,199] {dag.py:2972} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-07-14T22:12:00+00:00, run_after=2022-07-14T22:13:00+00:00
+[2022-07-14 22:13:41,212] {processor.py:161} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.102 seconds
+[2022-07-14 22:14:11,593] {processor.py:153} INFO - Started process (PID=316) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:14:11,594] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-07-14 22:14:11,595] {logging_mixin.py:115} INFO - [2022-07-14 22:14:11,595] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:14:11,619] {processor.py:651} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:14:11,648] {logging_mixin.py:115} INFO - [2022-07-14 22:14:11,648] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-14 22:14:11,681] {logging_mixin.py:115} INFO - [2022-07-14 22:14:11,680] {dag.py:2972} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-07-14T22:13:00+00:00, run_after=2022-07-14T22:14:00+00:00
+[2022-07-14 22:14:11,702] {processor.py:161} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.113 seconds
+[2022-07-14 22:14:42,072] {processor.py:153} INFO - Started process (PID=377) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:14:42,073] {processor.py:641} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-07-14 22:14:42,073] {logging_mixin.py:115} INFO - [2022-07-14 22:14:42,073] {dagbag.py:508} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:14:42,093] {processor.py:651} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-07-14 22:14:42,121] {logging_mixin.py:115} INFO - [2022-07-14 22:14:42,121] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-14 22:14:42,149] {logging_mixin.py:115} INFO - [2022-07-14 22:14:42,149] {dag.py:2972} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-07-14T22:13:00+00:00, run_after=2022-07-14T22:14:00+00:00
+[2022-07-14 22:14:42,161] {processor.py:161} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.092 seconds
