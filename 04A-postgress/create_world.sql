@@ -9,6 +9,11 @@ BEGIN;
 
 SET client_encoding = 'LATIN1';
 
+DROP TABLE city;
+DROP TABLE country;
+DROP TABLE countrylanguage;
+
+
 CREATE TABLE city (
     id integer NOT NULL,
     name text NOT NULL,
