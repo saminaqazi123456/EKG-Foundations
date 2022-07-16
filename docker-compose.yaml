@@ -298,8 +298,8 @@ services:
     ports:
       - '5432:5432'
     volumes: 
-      - ./init/postgres/dump:/tmp/dump
-      - ./init/postgres/script:/docker-entrypoint-initdb.d
+      - ./999-data/postgres/dump:/tmp/dump
+      - ./999-data/postgres/script:/docker-entrypoint-initdb.d
       - ./volumes/ss_postgres_db:/var/lib/postgresql/data
     profiles:
       - superset
