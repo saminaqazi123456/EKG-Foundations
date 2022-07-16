@@ -1996,3 +1996,17 @@ NameError: name 'http_conn_str' is not defined
 [2022-07-16 23:02:22,765] {logging_mixin.py:115} INFO - [2022-07-16 23:02:22,765] {dag.py:2420} INFO - Sync 1 DAGs
 [2022-07-16 23:02:22,783] {logging_mixin.py:115} INFO - [2022-07-16 23:02:22,783] {dag.py:2972} INFO - Setting next_dagrun for process_files to 2022-07-16T00:00:00+00:00, run_after=2022-07-17T00:00:00+00:00
 [2022-07-16 23:02:22,792] {processor.py:161} INFO - Processing /opt/airflow/dags/process_files.py took 0.079 seconds
+[2022-07-16 23:02:52,843] {processor.py:153} INFO - Started process (PID=138) to work on /opt/airflow/dags/process_files.py
+[2022-07-16 23:02:52,843] {processor.py:641} INFO - Processing file /opt/airflow/dags/process_files.py for tasks to queue
+[2022-07-16 23:02:52,844] {logging_mixin.py:115} INFO - [2022-07-16 23:02:52,844] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/process_files.py
+[2022-07-16 23:02:52,858] {processor.py:651} INFO - DAG(s) dict_keys(['process_files']) retrieved from /opt/airflow/dags/process_files.py
+[2022-07-16 23:02:52,894] {logging_mixin.py:115} INFO - [2022-07-16 23:02:52,894] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-16 23:02:52,913] {logging_mixin.py:115} INFO - [2022-07-16 23:02:52,913] {dag.py:2972} INFO - Setting next_dagrun for process_files to 2022-07-16T00:00:00+00:00, run_after=2022-07-17T00:00:00+00:00
+[2022-07-16 23:02:52,923] {processor.py:161} INFO - Processing /opt/airflow/dags/process_files.py took 0.083 seconds
+[2022-07-16 23:03:22,971] {processor.py:153} INFO - Started process (PID=166) to work on /opt/airflow/dags/process_files.py
+[2022-07-16 23:03:22,972] {processor.py:641} INFO - Processing file /opt/airflow/dags/process_files.py for tasks to queue
+[2022-07-16 23:03:22,972] {logging_mixin.py:115} INFO - [2022-07-16 23:03:22,972] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/process_files.py
+[2022-07-16 23:03:22,986] {processor.py:651} INFO - DAG(s) dict_keys(['process_files']) retrieved from /opt/airflow/dags/process_files.py
+[2022-07-16 23:03:23,021] {logging_mixin.py:115} INFO - [2022-07-16 23:03:23,021] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-16 23:03:23,039] {logging_mixin.py:115} INFO - [2022-07-16 23:03:23,039] {dag.py:2972} INFO - Setting next_dagrun for process_files to 2022-07-16T00:00:00+00:00, run_after=2022-07-17T00:00:00+00:00
+[2022-07-16 23:03:23,048] {processor.py:161} INFO - Processing /opt/airflow/dags/process_files.py took 0.079 seconds
