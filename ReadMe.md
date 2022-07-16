@@ -15,3 +15,6 @@ docker system prune
 
 # Attach VSCode to running container
 https://code.visualstudio.com/docs/remote/attach-container
+
+# Docker compose
+docker-compose --profile airflow up

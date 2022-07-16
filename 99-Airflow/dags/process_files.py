@@ -1,5 +1,6 @@
 import airflow
 from airflow import DAG
+from airflow.operators.bash import BashOperator
 from airflow.sensors.http_sensor import HttpSensor
 from airflow.operators.dummy import DummyOperator
 from airflow.operators.python import PythonOperator
@@ -9,9 +10,11 @@ from datetime import datetime, timedelta
 
 import requests
 
+
+
 def download_file():
-    indata = requests.get('https://raw.githubusercontent.com/tadinve/EKG-Foundations/master/04A-postgress/world.sql')
-    with open('/opt/airflow/dags/files/world.sql', 'w') as outfile:
+    indata = requests.get('https://raw.githubusercontent.com/tadinve/EKG-Foundations/master/04A-postgress/create_world.sql')
+    with open('/opt/airflow/dags/files/create_world.sql', 'w') as outfile:
         outfile.write(indata.text)
 
 
@@ -25,12 +28,17 @@ with DAG(   dag_id="process_files",
             task_id= "start"
         )
 
+    setup_http_conn = BashOperator(
+            task_id= "setup_http_conn",
+            bash_command = './scripts/add_connections.sh'
+        )
+
     is_postgres_file_available = HttpSensor(
             task_id="is_postgres_file_available",
             method="GET",
             http_conn_id="http_api",
-            endpoint="world.sql",
-            response_check=lambda response: "select" in response.text,
+            endpoint="create_world.sql",
+            response_check=lambda response: "CREATE" in response.text,
             poke_interval=5,
             timeout=20
     )
@@ -44,7 +52,7 @@ with DAG(   dag_id="process_files",
     upload_to_pg = PostgresOperator(
                 task_id = "upload_to_pg",
                 postgres_conn_id = "pg_conn",
-                sql = "files/world.sql"
+                sql = "files/create_world.sql"
 
     )
 
@@ -52,5 +60,5 @@ with DAG(   dag_id="process_files",
             task_id= "end"
         )
 
-    start >> is_postgres_file_available >> download >> upload_to_pg >> end
+    start >> setup_http_conn >> is_postgres_file_available >> download >> upload_to_pg >> end
 

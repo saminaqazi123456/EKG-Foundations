@@ -1,0 +1,38 @@
+[2022-07-16 19:39:30,213] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: process_files.setup_http_conn manual__2022-07-16T19:39:29.629585+00:00 [queued]>
+[2022-07-16 19:39:30,223] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: process_files.setup_http_conn manual__2022-07-16T19:39:29.629585+00:00 [queued]>
+[2022-07-16 19:39:30,223] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-16 19:39:30,223] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-07-16 19:39:30,223] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-16 19:39:30,240] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): setup_http_conn> on 2022-07-16 19:39:29.629585+00:00
+[2022-07-16 19:39:30,246] {standard_task_runner.py:52} INFO - Started process 3177 to run task
+[2022-07-16 19:39:30,249] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'process_files', 'setup_http_conn', 'manual__2022-07-16T19:39:29.629585+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/process_files.py', '--cfg-path', '/tmp/tmpejmk7_ku', '--error-file', '/tmp/tmpqw7ookdd']
+[2022-07-16 19:39:30,250] {standard_task_runner.py:80} INFO - Job 25: Subtask setup_http_conn
+[2022-07-16 19:39:30,298] {task_command.py:371} INFO - Running <TaskInstance: process_files.setup_http_conn manual__2022-07-16T19:39:29.629585+00:00 [running]> on host 98d7be6daedb
+[2022-07-16 19:39:30,358] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=process_files
+AIRFLOW_CTX_TASK_ID=setup_http_conn
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-16T19:39:29.629585+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-16T19:39:29.629585+00:00
+[2022-07-16 19:39:30,359] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-07-16 19:39:30,359] {subprocess.py:74} INFO - Running command: ['bash', '-c', "*** connections delete 'conn_api'\n*** connections delete 'pg_conn'\n\n\n*** connections add 'conn_api' --conn-type 'HTTP' --conn-host 'raw.githubusercontent.com/tadinve/EKG-Foundations/master/04A-postgress/'\n\n\n*** connections add pg_conn \\\n  --conn-type 'postgress' \\\n  --conn-host '***' \\\n  --conn-login '***' \\\n  --conn-password '***' "]
+[2022-07-16 19:39:30,371] {subprocess.py:85} INFO - Output:
+[2022-07-16 19:39:32,611] {subprocess.py:92} INFO - Successfully deleted connection with `conn_id`=conn_api
+[2022-07-16 19:39:35,145] {subprocess.py:92} INFO - Successfully deleted connection with `conn_id`=pg_conn
+[2022-07-16 19:39:38,512] {subprocess.py:92} INFO - [[34m2022-07-16 19:39:38,512[0m] {[34mproviders_manager.py:[0m218} INFO[0m - Optional provider feature disabled when importing '***.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-***-providers-google' package[0m
+[2022-07-16 19:39:38,735] {subprocess.py:92} INFO - /home/***/.local/lib/python3.7/site-packages/***/cli/commands/connection_command.py:216 UserWarning: The type provided to --conn-type is invalid: HTTP
+[2022-07-16 19:39:38,736] {subprocess.py:92} INFO - /home/***/.local/lib/python3.7/site-packages/***/cli/commands/connection_command.py:218 UserWarning: Supported --conn-types are:['fs', 'mesos_framework-id', 'email', 'generic', 's3', 'aws', 'emr', 'redshift', 'kubernetes', 'docker', 'elasticsearch', 'ftp', 'google_cloud_platform', 'dataprep', 'gcpcloudsql', 'gcpcloudsqldb', 'gcpbigquery', 'gcpssh', 'grpc', 'vault', 'http', 'imap', 'azure', 'azure_data_explorer', 'azure_batch', 'azure_cosmos', 'azure_data_lake', 'azure_fileshare', 'azure_container_volume', 'azure_container_instance', 'wasb', 'azure_data_factory', 'azure_container_registry', 'mysql', 'odbc', 'postgres', 'redis', 'sftp', 'slackwebhook', 'sqlite', 'ssh'].Hence overriding the conn-type with generic
+[2022-07-16 19:39:38,743] {subprocess.py:92} INFO - Successfully added `conn_id`=conn_api : generic://:@raw.githubusercontent.com/tadinve/EKG-Foundations/master/04A-postgress/:
+[2022-07-16 19:39:42,287] {subprocess.py:92} INFO - [[34m2022-07-16 19:39:42,287[0m] {[34mproviders_manager.py:[0m218} INFO[0m - Optional provider feature disabled when importing '***.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-***-providers-google' package[0m
+[2022-07-16 19:39:42,498] {subprocess.py:92} INFO - /home/***/.local/lib/python3.7/site-packages/***/cli/commands/connection_command.py:216 UserWarning: The type provided to --conn-type is invalid: postgress
+[2022-07-16 19:39:42,500] {subprocess.py:92} INFO - /home/***/.local/lib/python3.7/site-packages/***/cli/commands/connection_command.py:218 UserWarning: Supported --conn-types are:['fs', 'mesos_framework-id', 'email', 'generic', 's3', 'aws', 'emr', 'redshift', 'kubernetes', 'docker', 'elasticsearch', 'ftp', 'google_cloud_platform', 'dataprep', 'gcpcloudsql', 'gcpcloudsqldb', 'gcpbigquery', 'gcpssh', 'grpc', 'vault', 'http', 'imap', 'azure', 'azure_data_explorer', 'azure_batch', 'azure_cosmos', 'azure_data_lake', 'azure_fileshare', 'azure_container_volume', 'azure_container_instance', 'wasb', 'azure_data_factory', 'azure_container_registry', 'mysql', 'odbc', 'postgres', 'redis', 'sftp', 'slackwebhook', 'sqlite', 'ssh'].Hence overriding the conn-type with generic
+[2022-07-16 19:39:42,500] {subprocess.py:92} INFO - [[34m2022-07-16 19:39:42,500[0m] {[34mcrypto.py:[0m82} WARNING[0m - empty cryptography key - values will not be stored encrypted.[0m
+[2022-07-16 19:39:42,507] {subprocess.py:92} INFO - Successfully added `conn_id`=pg_conn : generic://***:******@***:
+[2022-07-16 19:39:42,992] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-07-16 19:39:43,020] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=process_files, task_id=setup_http_conn, execution_date=20220716T193929, start_date=20220716T193930, end_date=20220716T193943
+[2022-07-16 19:39:43,080] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-16 19:39:43,124] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
