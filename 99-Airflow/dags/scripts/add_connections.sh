@@ -9,6 +9,7 @@ airflow connections add pg_conn \
   --conn-type 'postgres' \
   --conn-host 'my-postgres' \
   --conn-login 'postgres' \
+  --conn-schema 'northwind' \
   --conn-password 'postgres' 
 
 exit 0
