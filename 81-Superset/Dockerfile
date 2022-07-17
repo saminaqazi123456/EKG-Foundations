@@ -1,4 +1,4 @@
-FROM apache/superset
+FROM apache/superset:john-bodley--switch-cache-for-table-meta-dev
 
 USER root
 
