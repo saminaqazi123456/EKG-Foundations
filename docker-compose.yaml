@@ -290,6 +290,7 @@ services:
 
   ss-postgres_db:
     image: postgres:14.1-alpine
+    container_name: ss-postgres
     restart: always
     environment:
       - POSTGRES_DB=northwind
