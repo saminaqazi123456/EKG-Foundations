@@ -1,6 +1,6 @@
 databases:
 - database_name: PostgreSQL
-  sqlalchemy_uri: postgresql://postgres:postgres@ss-postgres/northwind
+  sqlalchemy_uri: postgresql://postgres:postgres@my-postgres/northwind
   tables:
   - columns:
     - column_name: birth_date
