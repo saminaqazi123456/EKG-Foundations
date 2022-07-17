@@ -1,2 +1,3 @@
 volume**
-99-Airflow/logs**
+99-Airflow/logs/**
+!99-Airflow/logs/.gitkeep

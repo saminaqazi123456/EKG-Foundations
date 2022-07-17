@@ -7,6 +7,12 @@ https://docs.docker.com/engine/reference/builder/
 # List all docker images
 docker images 
 
+# view running dockers
+ docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"
+ docker ps --format "table {{.ID}}\t{{.Ports}}\t{{.Names}}\t{{.Status}}"
+ https://docs.docker.com/engine/reference/commandline/ps/
+
+
 # Stop all running Docker containers
 docker kill $(docker ps -q)
 

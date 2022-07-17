@@ -265,6 +265,7 @@ services:
 ###################################################################################################
   ss-redis:
     image: redis
+    container_name: ss-redis
     restart: always
     profiles:
       - superset
@@ -274,6 +275,7 @@ services:
   ss-mysql:
     # command: --character-set-server=utf8mb4 --collati   on-server=utf8mb4_unicode_ci
     image: mysql:5
+    container_name: ss-mysql
     restart: always
     environment:
       MYSQL_DATABASE: superset
@@ -287,10 +289,31 @@ services:
     profiles:
       - superset
 
+  ss-superset:
+    # image: amancevice/superset
+    build: ./81-Superset
+    container_name: ss-superset
+    command: ["/usr/bin/run-server.sh"]
+    user: "root"
+    restart: always
+    depends_on:
+      - ss-mysql
+      - ss-redis
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./docker/superset/config/:/etc/superset/
+      - ./docker/superset/superset_data/:/home/superset/ 
+    profiles:
+      - superset
 
-  ss-postgres_db:
+
+###################################################################################################
+#########     Common                                                                      #########
+###################################################################################################
+  my-postgres:
     image: postgres:14.1-alpine
-    container_name: ss-postgres
+    container_name: my-postgres
     restart: always
     environment:
       - POSTGRES_DB=northwind
@@ -302,28 +325,18 @@ services:
       - ./999-data/postgres/dump:/tmp/dump
       - ./999-data/postgres/script:/docker-entrypoint-initdb.d
       - ./volumes/ss_postgres_db:/var/lib/postgresql/data
-    profiles:
-      - superset
 
 
-  ss-superset:
-    # image: amancevice/superset
-    build: ./81-Superset
-    command: ["/usr/bin/run-server.sh"]
-    user: "root"
+
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
     restart: always
-    depends_on:
-      - ss-mysql
-      - ss-redis
     environment:
-      MAPBOX_API_KEY: ${MAPBOX_API_KEY}
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
     ports:
-      - "8088:8088"
-    volumes:
-      - ./docker/superset/config/:/etc/superset/
-      - ./docker/superset/superset_data/:/home/superset/ 
-    profiles:
-      - superset
+      - "5050:80"
 
 ###################################################################################################
 #########     Networkds and Volumes                                                       #########
